@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibble Poster</title>
+    <style>
+        body {
+            background-color: #A3D8F4; 
+            font-family: 'Comic Sans MS', cursive, sans-serif; 
+            color: #3E206D; 
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #B580E2; 
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .download-button {
+            padding: 15px 30px;
+            background-color: #B580E2; 
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 10px;
+            display: inline-block;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .download-button:hover {
+            background-color: #F7A8B8; 
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 5px solid #B580E2; 
+            padding: 30px;
+            border-radius: 25px;
+            background-color: white; 
+            box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+        }
+        .girlfriend-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #F7A8B8; 
+            color: #3E206D; 
+            border: none;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 0.9em;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        .girlfriend-button:hover {
+            background-color: #B580E2;
+            color: white;
+        }
+        .snacksforkarina {
+            display: none;
+            position: fixed;
+            bottom: 70px;
+            left: 20px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 0.85em;
+            color: #3E206D;
+        }
+        img {
+            margin-top: 40px;
+            width: 300px;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Download the Bibble poster!</h1>
+        <a href="images/bibble.jpg" class="download-button" download="bibble.jpg">Download JPG</a>
+        <a href="images/bibble.png" class="download-button" download="bibble.png">Download PNG</a>
+        <a href="images/bibble.svg" class="download-button" download="bibble.svg">Download SVG</a>
+        <a href="images/bibble.pdf" class="download-button" download="bibble.pdf">Download PDF</a>
+    </div>
+
+    <!-- Bibble image added below the download buttons -->
+    <img src="images/bibble.png" alt="Bibble Poster">
+
+    <button class="girlfriend-button" onclick="snacksforkarina()">Snacks for my girlfriend 🤫</button>
+
+    <div class="snacksforkarina" id="snacksforkarina">
+        <ul>
+            <p><strong>CashApp:</strong> $cheezitoriginal</p>
+            <p><strong>Venmo:</strong> @Cj5404</p>
+        </ul>
+    </div>
+
+    <script>
+        function snacksforkarina() {
+            var snacksforkarina = document.getElementById('snacksforkarina');
+            if (snacksforkarina.style.display === 'none' || snacksforkarina.style.display === '') {
+                snacksforkarina.style.display = 'block';
+            } else {
+                snacksforkarina.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
